@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    background: url(../Week-8/Images/paint.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 300px;
+    width: 300px; */ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    margin: 0;
+    height: 20vh;
+    text-align: center;
+    background: url(images/Black\ moon.jpg)
+}
+
+.mainB {
+    padding: 10px;
+    font-size: -5rem;
+}
+
+.Hhome {
+    font-size: 5rem;
+    color: aliceblue;
+    margin-top: 0%;
+}
+
+.container {
+    --gap: 12px;
+    --num-cols: 4;
+    --row-height: 250px;
+
+    box-sizing: content-box;
+    
+    display: grid;
+    margin: 10vh;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    border: solid 30px black;
+    
+}
+
+/* .container > #montana {
+    width: 100px;
+    height: 100px;
+    grid-column: span 3;
+    grid-row: span 2;
+} */
+
+.container > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-col2 {
+    grid-column: span 2;
+}
+
+.container-row2 {
+    grid-row: span 2;
+}
+
+.container-col3 {
+    grid-column: span 3;
+}
+
+.container-col4 {
+    grid-column: span 4;
+}
+
