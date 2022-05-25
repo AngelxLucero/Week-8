@@ -5,42 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <style>
-        h2 {text-align: center;}
-        div {text-align: center;}
-    </style>
 
-   <div>
-    <h1>Contact</h1>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+   <div class="mainB">
+    <a class="mainB" href="index.html">Home</a>
+    <a class="mainB" href="about.html">About</a>
+    <a class="mainB" href="contact.html">Contact</a>
+    <h1 class="Hhome">Contact Me</h1>
     </div>
 
-<table>
-    <tr>
-        <th>Site</th>
-        <th>Link</th>
+<table class="reach">
+    <tr class="reach">
+        <th class="reach">Site</th>
+        <th class="reach">Link</th>
     </tr>
-    <tr>
-        <td>Facebook</td>
-        <td><a href="#">Visit my Facebook page</a></td>
+    <tr class="reach">
+        <td class="reach">Facebook</td>
+        <td><a class="col" href="#">Visit my Facebook page</a></td>
     </tr>
-    <tr>
-        <td>Instagram</td>
-        <td><a href="#">Visit my Instagram page</a></td>
+    <tr class="reach">
+        <td class="reach">Instagram</td>
+        <td><a class="col" href="#">Visit my Instagram page</a></td>
     </tr>
 </table>
 
-<form action="Contact Us">
-    <h2>Contact Us</h2>
-    <input type="text" name="firstName" placeholder="First Name">
-    <input type="text" name="lastName" placeholder="Last Name">
-    <input type="text" name="email" placeholder="Email Address">
+<form class="contact" action="Contact Us">
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+    <label for="email">Email Address</label><br>
+    <input type="text" id="email" name="emailaddress" placeholder="Your email address"><br>
+    <label for="subject">Subject</label><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea><br>
     <input type="submit" value="Submit">
-</form>
+  </form>
 
 </body>
 </html>

@@ -8,45 +8,112 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h1 {
-    margin: 0;
     height: 20vh;
     text-align: center;
-    background: url(images/Black\ moon.jpg)
 }
 
+a:visited {
+    color: aqua;
+}
+
+a:hover {
+    color: rgb(116, 245, 10);
+}
+
+a:active {
+    color: #bd0bf3;
+}
+
+
 .mainB {
-    padding: 10px;
+    padding: 30px;
     font-size: -5rem;
+    color: rgb(0, 255, 42);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .Hhome {
     font-size: 5rem;
     color: aliceblue;
-    margin-top: 0%;
+    text-shadow: 5px 5px rgb(174, 0, 255);
 }
 
 .container {
-    --gap: 12px;
+    --gap: 0;
     --num-cols: 4;
     --row-height: 250px;
 
     box-sizing: content-box;
     
     display: grid;
-    margin: 10vh;
+    margin: 20vh;
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
-    border: solid 30px black;
+    /* border: 3px solid white; */
+   background: black;
     
 }
 
-/* .container > #montana {
-    width: 100px;
-    height: 100px;
-    grid-column: span 3;
-    grid-row: span 2;
-} */
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.3);
+    }
+
+    50% {
+        transform: rotate(45deg);
+        backgroud: violet;
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes skew {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.3);
+    }
+
+    50% {
+        transform: skew(30deg, 20deg);
+        backgroud: violet;
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.box-odd {
+    animation-name: pop;
+    animation-duration: 4s; 
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+
+.box-even {
+    animation-name: skew;
+    animation-duration: 4s; 
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+
+.pic {
+    border: solid 10px black;
+    width: 100%;
+    height: 100%;
+}
 
 .container > img{
     width: 100%;
@@ -62,6 +129,10 @@ h1 {
     grid-row: span 2;
 }
 
+.container-row3 {
+    grid-row: span 3;
+}
+
 .container-col3 {
     grid-column: span 3;
 }
@@ -70,3 +141,105 @@ h1 {
     grid-column: span 4;
 }
 
+.sec {
+    /* border: solid 3px white; */
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+}
+
+h2 {
+    color: rgb(252, 137, 252);
+    text-shadow: 3px 3px purple;
+    font-size: 50px;
+    text-align: center;
+    /* background-color: rgba(28, 28, 27, 0.7) */
+}
+ul {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+
+.info {
+    line-height: 1.8;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-size: 25px;
+    width: 70%;
+    height: auto;
+    position: relative;
+    left: 15rem;
+    background-color: rgba(28, 28, 27, 0.7)
+}
+
+.reach {
+    table-layout: auto;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: -10;
+    width: 50%;
+    font-size: 2rem;
+    padding: 10px;
+    border-collapse: collapse;
+    background-color: rgba(28, 28, 27, 0.2)
+}
+
+.col {
+    width: 80%;
+    color: aqua;
+}
+
+.contact {
+    text-align: center;
+    margin: 5%;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #0dce0d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f29a;
+    padding: 10px;
+  }
+  
+
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
