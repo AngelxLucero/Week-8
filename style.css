@@ -53,7 +53,8 @@ a:active {
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
     /* border: 3px solid white; */
-   background: black;
+   background: rgba(20, 20, 20, 0.5);
+   border-color: black;
     
 }
 
@@ -152,8 +153,13 @@ h2 {
     color: rgb(252, 137, 252);
     text-shadow: 3px 3px purple;
     font-size: 50px;
+    position: relative;
+    border-radius: 5%;
+    margin-right: 38%;
+    margin-left: 38%;
     text-align: center;
-    /* background-color: rgba(28, 28, 27, 0.7) */
+    background-color: rgba(28, 28, 27, 0.7)
+    
 }
 ul {
     font-size: 20px;
@@ -242,4 +248,6 @@ ul {
     display: table;
     clear: both;
   }
+
+
   
